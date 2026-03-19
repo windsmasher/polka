@@ -1,6 +1,6 @@
 # Polka
 
-Website for Polka hairdressing salon.
+Website for "Polka" hairdressing salon.
 
 ## Work in progress
 
