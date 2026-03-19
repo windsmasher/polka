@@ -4,7 +4,20 @@ Website for Polka hairdressing salon.
 
 ## Work in progress
 
-This site is currently under construction. The `index.html` file contains a simple placeholder page informing about the upcoming salon website.
+This site is currently under construction. A simple React app displays an "under construction" message.
+
+## Tech stack
+
+- React 19 + TypeScript
+- Vite 6
+- Deploy: GitHub Pages
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
 
 ## Deployment
 
