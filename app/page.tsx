@@ -1,7 +1,7 @@
-import Header from './components/Header'
-import UnderConstruction from './components/UnderConstruction'
+import Header from '@/components/Header'
+import UnderConstruction from '@/components/UnderConstruction'
 
-function App() {
+export default function HomePage() {
   return (
     <div className="app">
       <Header />
@@ -11,5 +11,3 @@ function App() {
     </div>
   )
 }
-
-export default App

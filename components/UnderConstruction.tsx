@@ -1,4 +1,4 @@
-function UnderConstruction() {
+export default function UnderConstruction() {
   return (
     <section className="under-construction" aria-label="Informacja o budowie strony">
       <p className="under-construction__message">Strona w budowie</p>
@@ -9,5 +9,3 @@ function UnderConstruction() {
     </section>
   )
 }
-
-export default UnderConstruction
