@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Source_Sans_3 } from 'next/font/google'
+import { Cormorant_Garamond, Great_Vibes, Source_Sans_3 } from 'next/font/google'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -14,6 +14,13 @@ const sourceSans = Source_Sans_3({
   weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-body',
+})
+
+const greatVibes = Great_Vibes({
+  weight: '400',
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-brand-script',
 })
 
 const siteTitle = 'Polka – Salon fryzjerski'
@@ -47,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${cormorant.variable} ${sourceSans.variable}`}>
+      <body className={`${cormorant.variable} ${sourceSans.variable} ${greatVibes.variable}`}>
         {children}
       </body>
     </html>
