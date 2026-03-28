@@ -24,8 +24,7 @@ const greatVibes = Great_Vibes({
 })
 
 const siteTitle = 'Polka – Salon fryzjerski'
-const siteDescription =
-  'Polka – Salon fryzjerski. Strona w budowie. Niedługo nowa strona salonu.'
+const siteDescription = 'Salon fryzjersko trychologiczny.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.salonpolka.pl'),
@@ -42,6 +41,11 @@ export const metadata: Metadata = {
     locale: 'pl_PL',
     url: 'https://www.salonpolka.pl',
     siteName: 'Polka',
+    title: siteTitle,
+    description: siteDescription,
+  },
+  twitter: {
+    card: 'summary_large_image',
     title: siteTitle,
     description: siteDescription,
   },
