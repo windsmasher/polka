@@ -1,12 +1,12 @@
 import Header from '@/components/Header'
-import UnderConstruction from '@/components/UnderConstruction'
+import Home from '@/components/Home'
 
 export default function HomePage() {
   return (
     <div className="app">
       <Header />
       <main className="main">
-        <UnderConstruction />
+        <Home />
       </main>
     </div>
   )

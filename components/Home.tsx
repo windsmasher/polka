@@ -4,12 +4,12 @@ import { useRef } from 'react'
 
 import { useLogoWidthFromTitle } from '@/hooks/useLogoWidthFromTitle'
 
-export default function UnderConstruction() {
+export default function Home() {
   const titleRef = useRef<HTMLHeadingElement>(null)
   const logoWidthPx = useLogoWidthFromTitle(titleRef)
 
   return (
-    <section className="under-construction" aria-label="Informacja o budowie strony">
+    <section className="under-construction" aria-label="Strona główna">
       <div className="under-construction__brand">
         <h1 ref={titleRef} className="under-construction__message">
           Polka
@@ -31,7 +31,7 @@ export default function UnderConstruction() {
         </div>
       </div>
       <p className="under-construction__subtitle">
-        Niedługo zaprezentujemy nową stronę salonu fryzjerskiego Polka.
+        Salon fryzjersko trychologiczny w Gliwicach.
       </p>
       <div className="under-construction__divider" aria-hidden="true" />
     </section>
