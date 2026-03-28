@@ -1,38 +1,12 @@
 'use client'
 
-import { useLayoutEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
+
+import { useLogoWidthFromTitle } from '@/hooks/useLogoWidthFromTitle'
 
 export default function UnderConstruction() {
   const titleRef = useRef<HTMLHeadingElement>(null)
-  const [logoWidthPx, setLogoWidthPx] = useState<number | null>(null)
-
-  useLayoutEffect(() => {
-    const el = titleRef.current
-    if (!el) return
-
-    const update = () => {
-      const base = el.offsetWidth
-      if (base < 1) return
-
-      const ls = getComputedStyle(el).letterSpacing
-      let extra = 0
-      if (ls && ls !== 'normal') {
-        const px = parseFloat(ls)
-        if (!Number.isNaN(px)) {
-          extra = px * 4 /* gaps between 5 letters: P-o-l-k-a */
-        }
-      }
-
-      const WIDER_RATIO = 1.3
-      setLogoWidthPx(Math.ceil((base + extra) * WIDER_RATIO))
-    }
-
-    update()
-    requestAnimationFrame(update)
-    const ro = new ResizeObserver(update)
-    ro.observe(el)
-    return () => ro.disconnect()
-  }, [])
+  const logoWidthPx = useLogoWidthFromTitle(titleRef)
 
   return (
     <section className="under-construction" aria-label="Informacja o budowie strony">
