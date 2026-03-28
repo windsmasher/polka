@@ -1,7 +1,7 @@
 export default function UnderConstruction() {
   return (
     <section className="under-construction" aria-label="Informacja o budowie strony">
-      <p className="under-construction__message">Strona w budowie</p>
+      <h1 className="under-construction__message">Polka</h1>
       <p className="under-construction__subtitle">
         Niedługo zaprezentujemy nową stronę salonu fryzjerskiego Polka.
       </p>
