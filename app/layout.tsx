@@ -1,19 +1,16 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Great_Vibes, Source_Sans_3 } from 'next/font/google'
+import { Cormorant_Garamond, Great_Vibes } from 'next/font/google'
+
+import Header from '@/components/Header'
+import SiteFooter from '@/components/SiteFooter'
+
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin', 'latin-ext'],
-  weight: ['500', '600', '700'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
   variable: '--font-display',
-})
-
-const sourceSans = Source_Sans_3({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600'],
-  display: 'swap',
-  variable: '--font-body',
 })
 
 const greatVibes = Great_Vibes({
@@ -58,8 +55,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${cormorant.variable} ${sourceSans.variable} ${greatVibes.variable}`}>
-        {children}
+      <body className={`${cormorant.variable} ${greatVibes.variable}`}>
+        <div className="app">
+          <Header />
+          {children}
+          <SiteFooter />
+        </div>
       </body>
     </html>
   )
