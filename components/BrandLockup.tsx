@@ -32,7 +32,7 @@ export default function BrandLockup({ titleAs = 'h1' }: BrandLockupProps) {
       >
         <img
           className="under-construction__logo"
-          src="/polka-logo.svg"
+          src="/polka-logo.png"
           alt=""
           width={696}
           height={1024}
