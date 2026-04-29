@@ -86,8 +86,8 @@ export default function AboutPage() {
         </p>
 
         <p className="page-article__back">
-          <Link href="/" className="header__link">
-            ← Strona główna
+          <Link href="/" className="page-article__back-link">
+            Strona główna
           </Link>
         </p>
       </article>

@@ -415,3 +415,33 @@ body {
   margin: 2.5rem 0 0;
   font-size: 0.9375rem;
 }
+
+.page-article__back-link {
+  font-family: var(--font-display), Georgia, 'Times New Roman', serif;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.page-article__back-link::before {
+  content: '';
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  border-left: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-0.08em);
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+@media (hover: hover) {
+  .page-article__back-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent-light);
+  }
+}
