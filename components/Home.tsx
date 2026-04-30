@@ -1,8 +1,26 @@
 'use client'
 
+import { useEffect } from 'react'
 import BrandLockup from '@/components/BrandLockup'
 
 export default function Home() {
+  useEffect(() => {
+    const els = document.querySelectorAll<HTMLElement>('.reveal')
+    if (!els.length) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal--visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.12 }
+    )
+    els.forEach(el => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
   return (
     <section className="under-construction" aria-label="Strona główna">
       <div className="under-construction__hero">
@@ -24,8 +42,8 @@ export default function Home() {
 
       <div className="under-construction__intro-row">
         <div className="under-construction__intro-column">
-          <h2 className="under-construction__section-title">Moje podejście</h2>
-          <div className="under-construction__intro">
+          <h2 className="under-construction__section-title reveal">Moje podejście</h2>
+          <div className="under-construction__intro reveal reveal--delay-1">
             <p>
               Polka to kameralny salon, w którym <strong>zdrowie włosów i skóry głowy</strong> jest
               priorytetem — nie jako hasło reklamowe, ale jako codzienna, uważna praca.
@@ -44,7 +62,7 @@ export default function Home() {
           </div>
         </div>
 
-        <figure className="under-construction__portrait">
+        <figure className="under-construction__portrait reveal reveal--delay-2">
           <img
             src="/hero-portrait.png"
             alt="Justyna — trycholog i fryzjerka w salonie Polka w Gliwicach"
