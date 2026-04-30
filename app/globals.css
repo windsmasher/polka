@@ -201,9 +201,9 @@ body {
 .reveal--delay-2 { transition-delay: 0.36s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .under-construction__brand,
-  .under-construction__hero-tagline,
-  .under-construction__hero-actions { animation: none; filter: none; }
+  .salon-home__brand,
+  .salon-home__hero-tagline,
+  .salon-home__hero-actions { animation: none; filter: none; }
 
   .reveal {
     opacity: 1;
@@ -213,20 +213,20 @@ body {
 }
 
 /* Under construction / home */
-.under-construction {
+.salon-home {
   text-align: left;
   max-width: min(56rem, 100%);
   width: 100%;
   margin: 0 auto;
 }
 
-.under-construction__hero {
+.salon-home__hero {
   text-align: center;
   margin-bottom: clamp(2rem, 5vw, 3rem);
   padding-top: 0.35rem;
 }
 
-.under-construction__brand {
+.salon-home__brand {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,7 +234,7 @@ body {
   animation: logoReveal 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
-.under-construction__brand-title {
+.salon-home__brand-title {
   margin: 0;
   max-width: min(95%, 32rem);
   width: 100%;
@@ -242,12 +242,12 @@ body {
 }
 
 @media (max-width: 42rem) {
-  .under-construction__brand-title {
+  .salon-home__brand-title {
     max-width: min(70%, 20rem);
   }
 }
 
-.under-construction__hero-tagline {
+.salon-home__hero-tagline {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
   font-size: clamp(1.0625rem, 2.8vw, 1.3125rem);
   font-weight: 500;
@@ -262,12 +262,12 @@ body {
   animation: heroSlideUp 0.8s ease 0.4s both;
 }
 
-.under-construction__hero-actions {
+.salon-home__hero-actions {
   margin-top: clamp(1.5rem, 4vw, 2rem);
   animation: heroSlideUp 0.7s ease 0.7s both;
 }
 
-.under-construction__hero-cta {
+.salon-home__hero-cta {
   display: inline-flex;
   align-items: center;
   padding: 0.65rem 1.75rem;
@@ -284,19 +284,19 @@ body {
 }
 
 @media (hover: hover) {
-  .under-construction__hero-cta:hover {
+  .salon-home__hero-cta:hover {
     background: var(--color-text);
   }
 }
 
-.under-construction__logo {
+.salon-home__logo {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
 }
 
-.under-construction__section-title {
+.salon-home__section-title {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
   font-size: clamp(1.625rem, 4.5vw, 2.125rem);
   font-weight: 600;
@@ -306,7 +306,7 @@ body {
   line-height: 1.2;
 }
 
-.under-construction__intro-row {
+.salon-home__intro-row {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(12rem, 16.5rem);
   gap: clamp(1.75rem, 5vw, 3rem);
@@ -315,22 +315,22 @@ body {
 }
 
 @media (max-width: 42rem) {
-  .under-construction__intro-row {
+  .salon-home__intro-row {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .under-construction__portrait {
+  .salon-home__portrait {
     max-width: 18rem;
     justify-self: center;
   }
 }
 
-.under-construction__intro-column {
+.salon-home__intro-column {
   min-width: 0;
 }
 
-.under-construction__intro {
+.salon-home__intro {
   text-align: left;
   max-width: none;
   width: 100%;
@@ -340,18 +340,18 @@ body {
   color: var(--color-text);
 }
 
-.under-construction__intro strong {
+.salon-home__intro strong {
   font-weight: 600;
   color: var(--color-text);
 }
 
-.under-construction__portrait {
+.salon-home__portrait {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-.under-construction__portrait-img {
+.salon-home__portrait-img {
   width: 100%;
   height: auto;
   display: block;
@@ -359,7 +359,7 @@ body {
   box-shadow: 0 0.35rem 1.75rem rgba(26, 26, 26, 0.12);
 }
 
-.under-construction__portrait-caption {
+.salon-home__portrait-caption {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -368,7 +368,7 @@ body {
   padding: 0 0.25rem;
 }
 
-.under-construction__portrait-name {
+.salon-home__portrait-name {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
   font-size: 1.25rem;
   font-weight: 600;
@@ -376,18 +376,18 @@ body {
   letter-spacing: 0.02em;
 }
 
-.under-construction__portrait-role {
+.salon-home__portrait-role {
   font-size: 0.9375rem;
   line-height: 1.45;
   color: var(--color-accent);
   opacity: 0.95;
 }
 
-.under-construction__intro p {
+.salon-home__intro p {
   margin: 0 0 0.95em;
 }
 
-.under-construction__intro p:last-child {
+.salon-home__intro p:last-child {
   margin-bottom: 0;
 }
 
@@ -514,7 +514,7 @@ body {
   padding-top: clamp(2.25rem, 6.5vw, 3.75rem);
 }
 
-.under-construction__hero--article {
+.salon-home__hero--article {
   text-align: center;
   margin-bottom: 1.75rem;
 }

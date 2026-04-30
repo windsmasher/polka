@@ -4,10 +4,10 @@ type BrandLockupProps = {
 
 export default function BrandLockup({ titleAs: Tag = 'h1' }: BrandLockupProps) {
   return (
-    <div className="under-construction__brand">
-      <Tag className="under-construction__brand-title">
+    <div className="salon-home__brand">
+      <Tag className="salon-home__brand-title">
         <img
-          className="under-construction__logo"
+          className="salon-home__logo"
           src="/polka-logo-transparent.png"
           alt="Polka"
           width={2000}

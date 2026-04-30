@@ -18,7 +18,7 @@ export default function AboutPage() {
   return (
     <main className="main main--article main--article-with-brand">
       <article className="page-article" aria-labelledby="about-heading">
-        <div className="under-construction__hero under-construction__hero--article">
+        <div className="salon-home__hero salon-home__hero--article">
           <BrandLockup titleAs="p" />
         </div>
         <h1 id="about-heading" className="page-article__title">

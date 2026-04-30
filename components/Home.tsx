@@ -22,16 +22,16 @@ export default function Home() {
     return () => observer.disconnect()
   }, [])
   return (
-    <section className="under-construction" aria-label="Strona główna">
-      <div className="under-construction__hero">
+    <section className="salon-home" aria-label="Strona główna">
+      <div className="salon-home__hero">
         <BrandLockup titleAs="h1" />
-        <p className="under-construction__hero-tagline">
+        <p className="salon-home__hero-tagline">
           Salon Fryzjersko Trychologiczny w Gliwicach.
         </p>
-        <div className="under-construction__hero-actions">
+        <div className="salon-home__hero-actions">
           <a
             href="https://booksy.com/pl-pl/dl/show-business/298223"
-            className="under-construction__hero-cta"
+            className="salon-home__hero-cta"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,10 +40,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="under-construction__intro-row">
-        <div className="under-construction__intro-column">
-          <h2 className="under-construction__section-title reveal">Moje podejście</h2>
-          <div className="under-construction__intro reveal reveal--delay-1">
+      <div className="salon-home__intro-row">
+        <div className="salon-home__intro-column">
+          <h2 className="salon-home__section-title reveal">Moje podejście</h2>
+          <div className="salon-home__intro reveal reveal--delay-1">
             <p>
               Polka to mały salon, w którym <strong>zdrowie włosów i skóry głowy</strong> jest priorytetem.
             </p>
@@ -60,18 +60,18 @@ export default function Home() {
           </div>
         </div>
 
-        <figure className="under-construction__portrait reveal reveal--delay-2">
+        <figure className="salon-home__portrait reveal reveal--delay-2">
           <img
             src="/hero-portrait.png"
             alt="Justyna — trycholog i fryzjerka w salonie Polka w Gliwicach"
             width={800}
             height={1200}
             decoding="async"
-            className="under-construction__portrait-img"
+            className="salon-home__portrait-img"
           />
-          <figcaption className="under-construction__portrait-caption">
-            <span className="under-construction__portrait-name">Justyna</span>
-            <span className="under-construction__portrait-role">
+          <figcaption className="salon-home__portrait-caption">
+            <span className="salon-home__portrait-name">Justyna</span>
+            <span className="salon-home__portrait-role">
               Fryzjer i trycholog · 20+ lat doświadczenia
             </span>
           </figcaption>
