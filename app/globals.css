@@ -176,9 +176,9 @@ body {
 }
 
 /* Animations */
-@keyframes heroFadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+@keyframes logoReveal {
+  from { opacity: 0; transform: scale(0.93); filter: blur(8px); }
+  to   { opacity: 1; transform: scale(1);    filter: blur(0); }
 }
 
 @keyframes heroSlideUp {
@@ -203,7 +203,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .under-construction__brand,
   .under-construction__hero-tagline,
-  .under-construction__hero-actions { animation: none; }
+  .under-construction__hero-actions { animation: none; filter: none; }
 
   .reveal {
     opacity: 1;
@@ -231,7 +231,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  animation: heroFadeIn 1s ease both;
+  animation: logoReveal 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
 .under-construction__brand-title {
