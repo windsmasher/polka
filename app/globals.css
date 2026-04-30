@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -243,7 +243,7 @@ body {
 
 .under-construction__hero-tagline {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.0625rem, 2.8vw, 1.3125rem);
+  font-size: clamp(1.25rem, 3.5vw, 1.625rem);
   font-weight: 500;
   font-style: italic;
   line-height: 1.45;
@@ -329,7 +329,7 @@ body {
   max-width: none;
   width: 100%;
   margin: 0;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   line-height: 1.7;
   color: var(--color-text);
 }
@@ -531,7 +531,7 @@ body {
 
 .page-article__lead {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   line-height: 1.65;
   color: var(--color-text);
   margin: 0 0 2rem;
@@ -580,7 +580,7 @@ body {
 
 .page-article__prose {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   line-height: 1.7;
   color: var(--color-text);
 }

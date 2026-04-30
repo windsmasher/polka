@@ -27,8 +27,8 @@ export default function AboutPage() {
 
         <div className="page-article__lead">
           <p>Fryzjerstwo towarzyszy mi od ponad 20 lat.</p>
-          <p>Z czasem zaczęłam widzieć, że za problemami włosów stoi coś więcej niż tylko wygląd.</p>
-          <p>Dlatego poszłam dalej — w stronę trychologii.</p>
+          <p>Przez ten czas coraz częściej widziałam, że problemy z włosami rzadko dotyczą tylko włosów.</p>
+          <p>To skłoniło mnie do nauki trychologii.</p>
         </div>
 
         <section className="page-article__section" aria-labelledby="why-tricho-heading">
@@ -37,16 +37,17 @@ export default function AboutPage() {
           </h2>
           <div className="page-article__prose">
             <p>
-              Z czasem zaczęłam widzieć, że za problemami włosów często stoi coś głębiej. To był moment,
-              w którym postanowiłam się zatrzymać i pójść dalej — zostawić to, co znane, żeby nauczyć się
-              więcej o skórze głowy, organizmie i tym, co naprawdę wpływa na kondycję włosów.
+              Trafiały do mnie klientki z wypadaniem włosów, łamliwością, problemami ze skórą głowy —
+              i wiedziałam, że sama zmiana szamponu czy odżywki tu nie wystarczy. Zaczęłam szukać
+              głębiej. Ukończyłam szkolenie trychologiczne w instytucie medycznym i zrozumiałam,
+              że włosy to często odbicie tego, co dzieje się w całym organizmie.
             </p>
           </div>
         </section>
 
         <section className="page-article__section" aria-labelledby="experience-heading">
           <h2 id="experience-heading" className="page-article__section-title">
-            Doświadczenie i wiedza
+            Doświadczenie
           </h2>
           <ul className="page-article__list">
             <li>ponad 20 lat pracy jako fryzjer</li>
@@ -60,9 +61,10 @@ export default function AboutPage() {
             Jak pracuję
           </h2>
           <div className="page-article__prose">
-            <p>Łączę fryzjerstwo z trychologią i podejściem holistycznym.</p>
-            <p>Patrzę nie tylko na włosy, ale na cały organizm.</p>
-            <p>Pracuję spokojnie, z uważnością i czasem dla Ciebie.</p>
+            <p>
+              Każda wizyta zaczyna się od rozmowy. Pytam o zdrowie, dietę, styl życia — bo to wszystko ma wpływ na kondycję włosów.
+              Na tej podstawie razem ustalamy, co ma sens.
+            </p>
           </div>
         </section>
 
@@ -71,18 +73,15 @@ export default function AboutPage() {
             Czego możesz się spodziewać
           </h2>
           <div className="page-article__prose">
-            <p>Polka to kameralna przestrzeń bez pośpiechu i presji.</p>
-            <p>Jest czas na rozmowę, zrozumienie i indywidualne podejście.</p>
+            <p>
+              Polka to małe, spokojne miejsce. Nie ma tu kolejek ani pośpiechu.
+              Jest czas na to, żeby dobrze porozmawiać i zaplanować to, co naprawdę potrzebne.
+            </p>
           </div>
         </section>
 
-        <div className="page-article__closing" aria-label="Podsumowanie">
-          <p>Zdrowe włosy to nie przypadek.</p>
-          <p>To efekt zrozumienia i pracy od podstaw.</p>
-        </div>
-
         <p className="page-article__signature" aria-label="Podpis autorki">
-          Z szacunkiem Justyna.
+          Justyna
         </p>
 
         <p className="page-article__back">

@@ -26,7 +26,7 @@ export default function Home() {
       <div className="under-construction__hero">
         <BrandLockup titleAs="h1" />
         <p className="under-construction__hero-tagline">
-          Zdrowe włosy zaczynają się od zrozumienia skóry głowy.
+          Salon Fryzjersko Trychologiczny w Gliwicach.
         </p>
         <div className="under-construction__hero-actions">
           <a
@@ -45,19 +45,17 @@ export default function Home() {
           <h2 className="under-construction__section-title reveal">Moje podejście</h2>
           <div className="under-construction__intro reveal reveal--delay-1">
             <p>
-              Polka to kameralny salon, w którym <strong>zdrowie włosów i skóry głowy</strong> jest
-              priorytetem — nie jako hasło reklamowe, ale jako codzienna, uważna praca.
+              Polka to mały salon, w którym <strong>zdrowie włosów i skóry głowy</strong> jest priorytetem.
             </p>
             <p>
-              Po <strong>ponad 20 latach</strong> w zawodzie fryzjera poszłam dalej: w trychologię,
-              żeby <strong>realnie pomagać</strong>, nie tylko stylizować.
+              Po <strong>ponad 20 latach</strong> w zawodzie fryzjera zrobiłam szkolenie trychologiczne —
+              żeby rozumieć problemy głębiej, nie tylko je maskować.
             </p>
             <p>
-              Łączę <strong>doświadczenie</strong>, spojrzenie holistyczne i naturalne terapie —
-              bez pośpiechu, z czasem na rozmowę i na Ciebie.
+              Pracuję bez pośpiechu — z czasem na rozmowę i na to, co naprawdę potrzebne.
             </p>
             <p>
-              Zapraszam do miejsca, w którym możesz poczuć się <strong>swobodnie — jak u siebie</strong>.
+              Zapraszam.
             </p>
           </div>
         </div>
