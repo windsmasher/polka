@@ -10,6 +10,16 @@ export default function Home() {
         <p className="under-construction__hero-tagline">
           Zdrowe włosy zaczynają się od zrozumienia skóry głowy.
         </p>
+        <div className="under-construction__hero-actions">
+          <a
+            href="https://booksy.com/pl-pl/dl/show-business/298223"
+            className="under-construction__hero-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Umów wizytę
+          </a>
+        </div>
       </div>
 
       <div className="under-construction__intro-row">

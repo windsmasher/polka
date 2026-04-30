@@ -13,6 +13,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,19 +51,28 @@ body {
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem 1.5rem;
-  padding: 1.5rem 2rem;
-  border-bottom: 1px solid rgba(139, 115, 85, 0.2);
-  background: var(--color-bg);
+  gap: 0.75rem 1.5rem;
+  padding: 0.9rem 2rem;
+  border-bottom: 1px solid rgba(139, 115, 85, 0.18);
+  background: rgba(250, 249, 247, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .header__nav-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem 1.25rem;
   list-style: none;
@@ -86,9 +96,71 @@ body {
   }
 }
 
+.header__socials {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+@media (max-width: 40rem) {
+  .header__socials {
+    display: none;
+  }
+}
+
+.header__social-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-accent);
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+}
+
+.header__social-icon {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+
+@media (hover: hover) {
+  .header__social-link:hover {
+    opacity: 1;
+  }
+}
+
+.header__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.05rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+@media (hover: hover) {
+  .header__cta:hover {
+    background: var(--color-text);
+  }
+}
+
+@media (max-width: 28rem) {
+  .header__cta {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+    letter-spacing: 0.04em;
+  }
+}
+
 .header__logo {
   font-family: var(--font-brand-script), cursive;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1;
@@ -143,6 +215,32 @@ body {
   padding: 0 0.5rem;
   letter-spacing: 0.01em;
   opacity: 0.92;
+}
+
+.under-construction__hero-actions {
+  margin-top: clamp(1.5rem, 4vw, 2rem);
+}
+
+.under-construction__hero-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.75rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+@media (hover: hover) {
+  .under-construction__hero-cta:hover {
+    background: var(--color-text);
+  }
 }
 
 .under-construction__logo {
@@ -251,62 +349,102 @@ body {
 .site-footer {
   flex-shrink: 0;
   margin-top: auto;
-  padding: 1.75rem 1.5rem 2rem;
+  padding: 2.5rem 2rem;
   border-top: 1px solid rgba(139, 115, 85, 0.22);
   background: var(--color-bg);
-  text-align: center;
+}
+
+.site-footer__inner {
+  max-width: 56rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem 3rem;
+}
+
+@media (max-width: 42rem) {
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+  }
+}
+
+.site-footer__salon-name {
+  font-family: var(--font-brand-script), cursive;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0 0 0.6rem;
+  line-height: 1;
 }
 
 .site-footer__line {
   margin: 0;
   font-size: 0.9375rem;
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--color-text);
-  opacity: 0.88;
+  opacity: 0.72;
 }
 
 .site-footer__line + .site-footer__line {
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 
 .site-footer__link {
   color: var(--color-accent);
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  opacity: 1;
+  transition: color 0.2s ease;
 }
 
 @media (hover: hover) {
   .site-footer__link:hover {
     color: var(--color-text);
-    border-color: var(--color-accent-light);
   }
 }
 
 .site-footer__socials {
   display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  margin-top: 1rem;
+  gap: 1.75rem;
+  align-items: flex-end;
+}
+
+@media (max-width: 42rem) {
+  .site-footer__socials {
+    justify-content: center;
+  }
 }
 
 .site-footer__social-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 0.45rem;
   color: var(--color-accent);
+  text-decoration: none;
+  opacity: 0.72;
   transition: color 0.2s ease, opacity 0.2s ease;
-  opacity: 0.8;
+}
+
+.site-footer__social-label {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .site-footer__social-icon {
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .site-footer__booksy-logo {
-  height: 1.1rem;
+  height: 1.25rem;
   width: auto;
 }
 
