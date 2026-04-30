@@ -329,7 +329,7 @@ body {
   max-width: none;
   width: 100%;
   margin: 0;
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--color-text);
 }
@@ -531,7 +531,7 @@ body {
 
 .page-article__lead {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--color-text);
   margin: 0 0 2rem;
@@ -580,7 +580,7 @@ body {
 
 .page-article__prose {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--color-text);
 }
