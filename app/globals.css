@@ -241,9 +241,15 @@ body {
   line-height: 0;
 }
 
+@media (max-width: 42rem) {
+  .under-construction__brand-title {
+    max-width: min(70%, 20rem);
+  }
+}
+
 .under-construction__hero-tagline {
   font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.25rem, 3.5vw, 1.625rem);
+  font-size: clamp(1.0625rem, 2.8vw, 1.3125rem);
   font-weight: 500;
   font-style: italic;
   line-height: 1.45;
