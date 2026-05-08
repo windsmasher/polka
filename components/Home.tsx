@@ -77,6 +77,42 @@ export default function Home() {
           </figcaption>
         </figure>
       </div>
+
+      <div className="salon-home__gallery-section">
+        <h2 className="salon-home__section-title reveal">O salonie</h2>
+        <div className="salon-home__gallery reveal reveal--delay-1">
+          <figure className="salon-home__gallery-item">
+            <img
+              src="/home.jpeg"
+              alt="Salon Polka — wejście do budynku"
+              width={800}
+              height={600}
+              decoding="async"
+              className="salon-home__gallery-img"
+            />
+          </figure>
+          <figure className="salon-home__gallery-item">
+            <img
+              src="/salon.jpeg"
+              alt="Wnętrze salonu Polka — stanowiska do pracy"
+              width={800}
+              height={600}
+              decoding="async"
+              className="salon-home__gallery-img"
+            />
+          </figure>
+          <figure className="salon-home__gallery-item">
+            <img
+              src="/salon2.jpeg"
+              alt="Salon Polka — szczegół wnętrza"
+              width={800}
+              height={600}
+              decoding="async"
+              className="salon-home__gallery-img"
+            />
+          </figure>
+        </div>
+      </div>
     </section>
   )
 }

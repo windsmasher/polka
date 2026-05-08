@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(jpg|jpeg|png|webp\\)$\")",
+      "Bash(sips -s format jpeg salon.heic --out salon.jpeg)",
+      "Bash(sips -s format jpeg salon2.heic --out salon2.jpeg)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(open *)"
+    ]
+  }
+}

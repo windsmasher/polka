@@ -391,6 +391,53 @@ body {
   margin-bottom: 0;
 }
 
+.salon-home__gallery-section {
+  margin-top: clamp(3.5rem, 8vw, 5rem);
+  width: 100%;
+}
+
+.salon-home__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 3vw, 1.5rem);
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 56rem) {
+  .salon-home__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 42rem) {
+  .salon-home__gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.salon-home__gallery-item {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.salon-home__gallery-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.35rem 1.75rem rgba(26, 26, 26, 0.12);
+  transition: transform 0.4s ease;
+}
+
+@media (hover: hover) {
+  .salon-home__gallery-img:hover {
+    transform: scale(1.02);
+  }
+}
+
 /* Site footer (global) */
 .site-footer {
   flex-shrink: 0;
