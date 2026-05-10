@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pl_PL',
     url: 'https://www.salonpolka.pl',
-    siteName: 'Polka – fryzjer Gliwice',
+    siteName: 'Salon Polka - Fryzjerstwo Trychologiczne',
     title: siteTitle,
     description: siteDescription,
   },

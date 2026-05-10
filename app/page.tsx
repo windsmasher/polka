@@ -4,7 +4,7 @@ const businessJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HairSalon',
   '@id': 'https://www.salonpolka.pl/#salon',
-  name: 'Polka – Salon fryzjersko-trychologiczny',
+  name: 'Salon Polka - Fryzjerstwo Trychologiczne',
   alternateName: 'Polka Fryzjer Gliwice',
   description:
     'Kameralny salon fryzjersko-trychologiczny w Gliwicach. Strzyżenie, koloryzacja, pielęgnacja włosów i skóry głowy. 20+ lat doświadczenia.',

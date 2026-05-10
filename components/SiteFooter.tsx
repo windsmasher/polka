@@ -8,7 +8,7 @@ export default function SiteFooter() {
       <div className="site-footer__inner">
         <div className="site-footer__contact">
           <p className="site-footer__salon-name">Polka</p>
-          <p className="site-footer__line">Salon fryzjersko trychologiczny · Gliwice</p>
+          <p className="site-footer__line">Fryzjerstwo Trychologiczne · Gliwice</p>
           <p className="site-footer__line">ul. Daszyńskiego 226B</p>
           <p className="site-footer__line">
             <a href="tel:+48575509531" className="site-footer__link">

@@ -8,7 +8,24 @@ Kolejność = priorytet (od najważniejszego).
    - Załóż / zweryfikuj profil "Polka" pod adresem:
      ul. Daszyńskiego 226B, Gliwice
    - Kategoria główna: "Salon fryzjerski"
-   - Kategoria dodatkowa: "Trycholog"
+   - Kategoria dodatkowa: "Salon kosmetyczny"
+     (NIE dodawaj "Fryzjer" jako dodatkowej — to synonim głównej,
+      rozmywa sygnał. Trychologii nie ma w GBP — wciągamy ją przez
+      opis i listę usług, patrz niżej.)
+   - Nazwa firmy w GBP: "Polka — Salon fryzjersko-trychologiczny"
+     (to oficjalna nazwa szyldu, więc OK; nie upychaj słów kluczowych)
+   - Opis firmy (750 znaków, najważniejsze pierwsze 250):
+     wpleć naturalnie: "fryzjer Gliwice", "trycholog",
+     "konsultacja trychologiczna", "pielęgnacja włosów i skóry głowy",
+     "ul. Daszyńskiego"
+   - USŁUGI (dodaj ręcznie, Google pozwala na własne pozycje):
+     * Strzyżenie damskie
+     * Strzyżenie męskie
+     * Koloryzacja włosów
+     * Konsultacja trychologiczna
+     * Diagnoza skóry głowy
+     * Pielęgnacja włosów i skóry głowy
+     Każdej dodaj krótki opis i cenę — to też sygnał rankingowy.
    - Wgraj zdjęcia z public/ (wnętrze, wejście, portret)
    - Uzupełnij: godziny otwarcia, telefon (575 509 531),
      link do https://www.salonpolka.pl, link do Booksy
