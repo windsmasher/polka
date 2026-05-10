@@ -9,7 +9,7 @@ const businessJsonLd = {
   description:
     'Kameralny salon fryzjersko-trychologiczny w Gliwicach. Strzyżenie, koloryzacja, pielęgnacja włosów i skóry głowy. 20+ lat doświadczenia.',
   url: 'https://www.salonpolka.pl',
-  image: 'https://www.salonpolka.pl/salon.jpeg',
+  image: 'https://www.salonpolka.pl/salon.webp',
   logo: 'https://www.salonpolka.pl/polka-logo-transparent.png',
   telephone: '+48575509531',
   priceRange: '$$',

@@ -62,7 +62,7 @@ export default function Home() {
 
         <figure className="salon-home__portrait reveal reveal--delay-2">
           <img
-            src="/hero-portrait.png"
+            src="/hero-portrait.webp"
             alt="Justyna — trycholog i fryzjerka w salonie Polka w Gliwicach"
             width={800}
             height={1200}
@@ -83,7 +83,7 @@ export default function Home() {
         <div className="salon-home__gallery reveal reveal--delay-1">
           <figure className="salon-home__gallery-item">
             <img
-              src="/home.jpeg"
+              src="/home.webp"
               alt="Salon fryzjerski Polka w Gliwicach — wejście do budynku przy ul. Daszyńskiego 226B"
               width={800}
               height={600}
@@ -93,7 +93,7 @@ export default function Home() {
           </figure>
           <figure className="salon-home__gallery-item">
             <img
-              src="/salon.jpeg"
+              src="/salon.webp"
               alt="Wnętrze salonu fryzjerskiego Polka w Gliwicach — stanowiska fryzjerskie"
               width={800}
               height={600}
@@ -103,7 +103,7 @@ export default function Home() {
           </figure>
           <figure className="salon-home__gallery-item">
             <img
-              src="/salon2.jpeg"
+              src="/salon2.webp"
               alt="Salon Polka w Gliwicach — strefa pracy fryzjera i trychologa"
               width={800}
               height={600}
