@@ -66,11 +66,10 @@ Kolejność = priorytet (od najważniejszego).
    - Wymiana poleceń: kosmetyczki, dermatolodzy, kliniki włosów
    - Każdy link z lokalnej, tematycznej strony bardzo pomaga
 
-6. WAGA OBRAZÓW / SPEED
-   - Usuń nieużywane pliki .heic z public/
-     (salon.heic, salon2.heic — kilka MB, nie są ładowane)
-   - Przepuść home.jpeg, salon.jpeg, salon2.jpeg, hero-portrait.png
-     przez https://squoosh.app → WebP, max ~150 KB każdy
+6. WAGA OBRAZÓW / SPEED — ZROBIONE
+   - [x] Usunięto salon.heic, salon2.heic (−5,5 MB)
+   - [x] Konwersja do WebP: home, salon, salon2, hero-portrait (−60–72%)
+   - [x] Stare .jpeg/.png usunięte, kod zaktualizowany
    - Szybsza strona = lepsze Core Web Vitals = lepszy ranking
 
 7. TREŚĆ — DŁUGI OGON
