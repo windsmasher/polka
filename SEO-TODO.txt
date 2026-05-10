@@ -1,0 +1,96 @@
+SEO TODO — działania poza kodem (target: "fryzjer Gliwice")
+============================================================
+
+W lokalnym SEO ~70% efektu dają sygnały zewnętrzne, nie strona.
+Kolejność = priorytet (od najważniejszego).
+
+1. WIZYTÓWKA GOOGLE (Google Business Profile) — NAJWAŻNIEJSZE
+   - Załóż / zweryfikuj profil "Polka" pod adresem:
+     ul. Daszyńskiego 226B, Gliwice
+   - Kategoria główna: "Salon fryzjerski"
+   - Kategoria dodatkowa: "Trycholog"
+   - Wgraj zdjęcia z public/ (wnętrze, wejście, portret)
+   - Uzupełnij: godziny otwarcia, telefon (575 509 531),
+     link do https://www.salonpolka.pl, link do Booksy
+   - Bez wizytówki nie ma szans na pozycjonowanie na "fryzjer Gliwice"
+
+2. OPINIE GOOGLE
+   - Proś klientki o opinie po wizycie (np. SMS z linkiem)
+   - Cel: ~20+ opinii ze średnią 4,8+
+   - To zwykle wystarcza do wskoczenia w Google Local Pack
+     na "fryzjer gliwice [dzielnica]"
+
+3. GOOGLE SEARCH CONSOLE
+   - Zweryfikuj domenę salonpolka.pl
+     (https://search.google.com/search-console)
+   - Prześlij sitemap: https://www.salonpolka.pl/sitemap.xml
+   - Monitoruj na jakie frazy strona się pojawia
+   - Dodaj też w Bing Webmaster Tools (mały ruch, ale za darmo)
+
+4. NAP CONSISTENCY (Name / Address / Phone)
+   Identyczne dane we wszystkich miejscach:
+     Nazwa:   Polka — Salon fryzjersko-trychologiczny
+     Adres:   ul. Daszyńskiego 226B, 44-151 Gliwice
+     Telefon: +48 575 509 531
+   Sprawdź / zaktualizuj w:
+     - Booksy
+     - Facebook
+     - Instagram (bio)
+     - panoramafirm.pl
+     - pkt.pl
+     - aleo.com
+     - fryzjerzy.pl
+     - mapy.cz / OpenStreetMap
+
+5. LINKI LOKALNE (lokalne backlinki)
+   - Katalogi gliwickie: info.gliwice.pl, gliwiczanin.pl
+   - Lokalna prasa / portale dzielnicowe
+   - Wymiana poleceń: kosmetyczki, dermatolodzy, kliniki włosów
+   - Każdy link z lokalnej, tematycznej strony bardzo pomaga
+
+6. WAGA OBRAZÓW / SPEED
+   - Usuń nieużywane pliki .heic z public/
+     (salon.heic, salon2.heic — kilka MB, nie są ładowane)
+   - Przepuść home.jpeg, salon.jpeg, salon2.jpeg, hero-portrait.png
+     przez https://squoosh.app → WebP, max ~150 KB każdy
+   - Szybsza strona = lepsze Core Web Vitals = lepszy ranking
+
+7. TREŚĆ — DŁUGI OGON
+   Z czasem dodaj krótkie podstrony/wpisy (osobny URL = osobna fraza):
+     - "Trycholog Gliwice"
+     - "Koloryzacja włosów Gliwice"
+     - "Wypadanie włosów — konsultacja Gliwice"
+     - "Pielęgnacja skóry głowy Gliwice"
+   Bez tego jedna strona walczy tylko o jedną-dwie frazy.
+
+8. BOOKSY
+   - W opisie usług na Booksy też używaj frazy "fryzjer Gliwice"
+   - Booksy mocno rankuje w Google i może przyciągać ruch przed
+     Twoją stroną — wykorzystaj to
+   - Jeśli da się — dodaj w profilu Booksy link do salonpolka.pl
+
+9. SOCIAL SIGNALS
+   - W bio Instagrama / Facebooka: "Fryzjer Gliwice · ul. Daszyńskiego 226B"
+   - Link do salonpolka.pl w obu profilach
+   - Regularne posty z lokalizacją (geotag Gliwice)
+
+
+CO JEST JUŻ ZROBIONE W KODZIE
+=============================
+- Title i description z frazą "fryzjer Gliwice"
+- H1 z ukrytym tekstem SEO
+- JSON-LD HairSalon (adres, telefon, usługi, social)
+- /sitemap.xml i /robots.txt
+- Canonical URL na każdej stronie
+- Open Graph image z napisem "Fryzjer Gliwice"
+- Alty obrazków zawierają "Gliwice" i adres
+- Metadane podstrony "O mnie" pod frazę lokalną
+
+
+WERYFIKACJA PO WDROŻENIU
+========================
+- https://search.google.com/test/rich-results — sprawdź JSON-LD
+- https://pagespeed.web.dev — Core Web Vitals dla salonpolka.pl
+- https://www.salonpolka.pl/sitemap.xml — czy się otwiera
+- https://www.salonpolka.pl/robots.txt — czy się otwiera
+- Wpisz w Google: site:salonpolka.pl — sprawdź zaindeksowane strony

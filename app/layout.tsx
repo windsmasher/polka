@@ -20,24 +20,45 @@ const greatVibes = Great_Vibes({
   variable: '--font-brand-script',
 })
 
-const siteTitle = 'Polka – Salon fryzjerski'
-const siteDescription = 'Salon fryzjersko trychologiczny.'
+const siteTitle = 'Fryzjer Gliwice – Polka, salon fryzjersko-trychologiczny'
+const siteDescription =
+  'Polka – fryzjer w Gliwicach (ul. Daszyńskiego 226B). Kameralny salon fryzjersko-trychologiczny: strzyżenie, koloryzacja, pielęgnacja włosów i skóry głowy. 20+ lat doświadczenia.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.salonpolka.pl'),
   title: {
     default: siteTitle,
-    template: '%s | Polka',
+    template: '%s | Polka – fryzjer Gliwice',
   },
   description: siteDescription,
-  icons: {
-    icon: '/favicon.svg',
+  keywords: [
+    'fryzjer Gliwice',
+    'salon fryzjerski Gliwice',
+    'trycholog Gliwice',
+    'salon fryzjersko-trychologiczny',
+    'Polka Gliwice',
+    'fryzjer Daszyńskiego Gliwice',
+    'koloryzacja włosów Gliwice',
+    'pielęgnacja włosów Gliwice',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   openGraph: {
     type: 'website',
     locale: 'pl_PL',
     url: 'https://www.salonpolka.pl',
-    siteName: 'Polka',
+    siteName: 'Polka – fryzjer Gliwice',
     title: siteTitle,
     description: siteDescription,
   },

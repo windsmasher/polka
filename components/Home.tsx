@@ -24,9 +24,9 @@ export default function Home() {
   return (
     <section className="salon-home" aria-label="Strona główna">
       <div className="salon-home__hero">
-        <BrandLockup titleAs="h1" />
+        <BrandLockup titleAs="h1" srText="Polka — fryzjer Gliwice, salon fryzjersko-trychologiczny" />
         <p className="salon-home__hero-tagline">
-          Salon Fryzjersko Trychologiczny w Gliwicach.
+          Fryzjer w Gliwicach — kameralny salon fryzjersko-trychologiczny.
         </p>
         <div className="salon-home__hero-actions">
           <a
@@ -84,7 +84,7 @@ export default function Home() {
           <figure className="salon-home__gallery-item">
             <img
               src="/home.jpeg"
-              alt="Salon Polka — wejście do budynku"
+              alt="Salon fryzjerski Polka w Gliwicach — wejście do budynku przy ul. Daszyńskiego 226B"
               width={800}
               height={600}
               decoding="async"
@@ -94,7 +94,7 @@ export default function Home() {
           <figure className="salon-home__gallery-item">
             <img
               src="/salon.jpeg"
-              alt="Wnętrze salonu Polka — stanowiska do pracy"
+              alt="Wnętrze salonu fryzjerskiego Polka w Gliwicach — stanowiska fryzjerskie"
               width={800}
               height={600}
               decoding="async"
@@ -104,7 +104,7 @@ export default function Home() {
           <figure className="salon-home__gallery-item">
             <img
               src="/salon2.jpeg"
-              alt="Salon Polka — szczegół wnętrza"
+              alt="Salon Polka w Gliwicach — strefa pracy fryzjera i trychologa"
               width={800}
               height={600}
               decoding="async"

@@ -3,14 +3,18 @@ import Link from 'next/link'
 
 import BrandLockup from '@/components/BrandLockup'
 
-const title = 'O mnie'
+const title = 'O mnie – Justyna, fryzjer i trycholog w Gliwicach'
 
 export const metadata: Metadata = {
   title,
   description:
-    'Justyna i salon Polka — doświadczenie fryzjerskie, trychologia, holistyczne podejście i kameralna przestrzeń w Gliwicach.',
+    'Justyna — fryzjer i trycholog z Gliwic. 20+ lat doświadczenia, szkolenie trychologiczne, holistyczne podejście do zdrowia włosów i skóry głowy. Salon Polka, ul. Daszyńskiego 226B.',
+  alternates: {
+    canonical: '/about-me',
+  },
   openGraph: {
     title: `${title} | Polka`,
+    url: 'https://www.salonpolka.pl/about-me',
   },
 }
 
