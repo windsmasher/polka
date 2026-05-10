@@ -46,18 +46,19 @@ Kolejność = priorytet (od najważniejszego).
 
 4. NAP CONSISTENCY (Name / Address / Phone)
    Identyczne dane we wszystkich miejscach:
-     Nazwa:   Polka — Salon fryzjersko-trychologiczny
-     Adres:   ul. Daszyńskiego 226B, 44-151 Gliwice
+     Nazwa:   Salon Polka - Fryzjerstwo Trychologiczne
+     Adres:   ul. Daszyńskiego 226B, Gliwice
      Telefon: +48 575 509 531
    Sprawdź / zaktualizuj w:
-     - Booksy
-     - Facebook
-     - Instagram (bio)
-     - panoramafirm.pl
-     - pkt.pl
-     - aleo.com
-     - fryzjerzy.pl
-     - mapy.cz / OpenStreetMap
+     - [x] Google Business Profile
+     - [x] Facebook
+     - [x] Booksy
+     - [ ] Instagram (bio)
+     - [ ] panoramafirm.pl
+     - [ ] pkt.pl
+     - [ ] aleo.com
+     - [ ] fryzjerzy.pl
+     - [ ] mapy.cz / OpenStreetMap
 
 5. LINKI LOKALNE (lokalne backlinki)
    - Katalogi gliwickie: info.gliwice.pl, gliwiczanin.pl
