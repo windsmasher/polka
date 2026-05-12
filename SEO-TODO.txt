@@ -53,7 +53,7 @@ Kolejność = priorytet (od najważniejszego).
      - [x] Google Business Profile
      - [x] Facebook
      - [x] Booksy
-     - [ ] Instagram (bio)
+     - [x] Instagram (bio)
      - [ ] panoramafirm.pl
      - [ ] pkt.pl
      - [ ] aleo.com

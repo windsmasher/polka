@@ -314,8 +314,14 @@ body {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.5rem;
   line-height: 1.2;
+}
+
+.salon-home__parking-info {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #666);
+  margin: 0 0 1.25rem;
 }
 
 .salon-home__intro-row {

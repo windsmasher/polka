@@ -80,6 +80,7 @@ export default function Home() {
 
       <div className="salon-home__gallery-section">
         <h2 className="salon-home__section-title reveal">O salonie</h2>
+        <p className="salon-home__parking-info reveal">Dostępne bezpłatne miejsca parkingowe wzdłuż ogrodzenia.</p>
         <div className="salon-home__gallery reveal reveal--delay-1">
           <figure className="salon-home__gallery-item">
             <img
@@ -105,6 +106,16 @@ export default function Home() {
             <img
               src="/salon2.webp"
               alt="Salon Polka w Gliwicach — strefa pracy fryzjera i trychologa"
+              width={800}
+              height={600}
+              decoding="async"
+              className="salon-home__gallery-img"
+            />
+          </figure>
+          <figure className="salon-home__gallery-item">
+            <img
+              src="/salon3.webp"
+              alt="Bezpłatny parking wzdłuż ogrodzenia przy salonie Polka w Gliwicach"
               width={800}
               height={600}
               decoding="async"
