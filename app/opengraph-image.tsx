@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const dynamic = 'force-static'
 
-export const alt = 'Polka – fryzjer Gliwice, salon fryzjersko-trychologiczny'
+export const alt = 'Salon Polka – Fryzjer Gliwice | Fryzjerstwo Trychologiczne'
 
 export const size = {
   width: 1200,
@@ -71,7 +71,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.45,
             }}
           >
-            Fryzjer Gliwice · salon fryzjersko-trychologiczny
+            Fryzjer Gliwice · Fryzjerstwo Trychologiczne
           </div>
         </div>
         <div
