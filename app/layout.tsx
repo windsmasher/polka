@@ -67,6 +67,12 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/polka-logo-transparent.png',
+  },
 }
 
 export default function RootLayout({
