@@ -26,7 +26,7 @@ export default function Home() {
       <div className="salon-home__hero">
         <BrandLockup titleAs="h1" srText="Salon Polka – Fryzjer Gliwice | Fryzjerstwo Trychologiczne" />
         <p className="salon-home__hero-tagline">
-          Fryzjer w Gliwicach — kameralny salon fryzjersko-trychologiczny.
+          Salon Polka – Fryzjer Gliwice | Fryzjerstwo Trychologiczne
         </p>
         <div className="salon-home__hero-actions">
           <a
