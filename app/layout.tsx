@@ -20,7 +20,7 @@ const greatVibes = Great_Vibes({
   variable: '--font-brand-script',
 })
 
-const siteTitle = 'Fryzjer Gliwice – Polka, salon fryzjersko-trychologiczny'
+const siteTitle = 'Salon Polka – Fryzjer Gliwice | Fryzjerstwo Trychologiczne'
 const siteDescription =
   'Polka – fryzjer w Gliwicach (ul. Daszyńskiego 226B). Kameralny salon fryzjersko-trychologiczny: strzyżenie, koloryzacja, pielęgnacja włosów i skóry głowy. 20+ lat doświadczenia.'
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.salonpolka.pl'),
   title: {
     default: siteTitle,
-    template: '%s | Polka – fryzjer Gliwice',
+    template: '%s | Salon Polka – Fryzjer Gliwice',
   },
   description: siteDescription,
   keywords: [
