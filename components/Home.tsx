@@ -65,10 +65,10 @@ export default function Home() {
 
         <figure className="salon-home__portrait reveal reveal--delay-2">
           <img
-            src="/hero-portrait.webp"
+            src="/best-hero.webp"
             alt="Justyna — trycholog i fryzjerka w salonie Polka w Gliwicach"
-            width={800}
-            height={1200}
+            width={4284}
+            height={5712}
             decoding="async"
             className="salon-home__portrait-img"
           />
