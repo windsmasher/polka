@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 import BrandLockup from '@/components/BrandLockup'
 
-const title = 'O mnie – Justyna, fryzjer i trycholog w Gliwicach'
+const title = 'O mnie – Justyna, fryzjer z podejściem trychologicznym w Gliwicach'
 
 export const metadata: Metadata = {
   title,
   description:
-    'Justyna — fryzjer i trycholog z Gliwic. 20+ lat doświadczenia, szkolenie trychologiczne, holistyczne podejście do zdrowia włosów i skóry głowy. Salon Polka, ul. Daszyńskiego 226B.',
+    'Justyna — fryzjer z podejściem trychologicznym z Gliwic. 20+ lat doświadczenia, szkolenie trychologiczne, holistyczne podejście do zdrowia włosów i skóry głowy. Salon Polka, ul. Daszyńskiego 226B.',
   alternates: {
     canonical: '/about-me',
   },
@@ -55,7 +55,7 @@ export default function AboutPage() {
 
           <Image
             src="/hero-good.webp"
-            alt="Justyna – fryzjer i trycholog"
+            alt="Justyna – fryzjer z podejściem trychologicznym"
             width={4284}
             height={5712}
             className="page-article__main-photo"

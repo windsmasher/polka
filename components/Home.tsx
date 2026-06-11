@@ -75,7 +75,7 @@ export default function Home() {
           <figcaption className="salon-home__portrait-caption">
             <span className="salon-home__portrait-name">Justyna</span>
             <span className="salon-home__portrait-role">
-              Fryzjer i trycholog · 20+ lat doświadczenia
+              Fryzjer z podejściem trychologicznym
             </span>
           </figcaption>
         </figure>
