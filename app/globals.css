@@ -727,3 +727,35 @@ body {
     border-color: var(--color-accent-light);
   }
 }
+
+/* About-me page: intro section with portrait photo */
+.page-article--with-photo {
+  max-width: 58rem;
+}
+
+.page-article__photo-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.page-article__photo-block-text {
+  min-width: 0;
+}
+
+.page-article__main-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(139, 115, 85, 0.16);
+}
+
+@media (min-width: 40rem) {
+  .page-article__photo-block {
+    grid-template-columns: 1fr 300px;
+    gap: 3.5rem;
+    align-items: start;
+  }
+}
