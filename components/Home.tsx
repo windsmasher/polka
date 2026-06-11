@@ -87,6 +87,16 @@ export default function Home() {
         <div className="salon-home__gallery reveal reveal--delay-1">
           <figure className="salon-home__gallery-item">
             <img
+              src="/storefront.webp"
+              alt="Wejście do salonu Polka w Gliwicach"
+              width={800}
+              height={600}
+              decoding="async"
+              className="salon-home__gallery-img"
+            />
+          </figure>
+          <figure className="salon-home__gallery-item">
+            <img
               src="/home.webp"
               alt="Salon fryzjerski Polka w Gliwicach — wejście do budynku przy ul. Daszyńskiego 226B"
               width={800}

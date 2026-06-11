@@ -415,29 +415,41 @@ body {
 }
 
 .salon-home__gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1rem, 3vw, 1.5rem);
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   margin-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 115, 85, 0.25) transparent;
+  -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  mask-image: linear-gradient(to right, black 85%, transparent 100%);
 }
 
-@media (max-width: 56rem) {
-  .salon-home__gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.salon-home__gallery::-webkit-scrollbar {
+  height: 3px;
 }
 
-@media (max-width: 42rem) {
-  .salon-home__gallery {
-    grid-template-columns: 1fr;
-  }
+.salon-home__gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.salon-home__gallery::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.3);
+  border-radius: 2px;
 }
 
 .salon-home__gallery-item {
+  flex: 0 0 auto;
+  width: clamp(260px, 38vw, 420px);
+  scroll-snap-align: start;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/2;
+  border-radius: 8px;
 }
 
 .salon-home__gallery-img {
@@ -445,14 +457,12 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.35rem 1.75rem rgba(26, 26, 26, 0.12);
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 @media (hover: hover) {
   .salon-home__gallery-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
 }
 
