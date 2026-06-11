@@ -62,6 +62,12 @@ body {
   padding-bottom: 3rem;
 }
 
+@media (min-width: 42rem) {
+  .main--home {
+    padding-top: clamp(0.75rem, 2vw, 1.25rem);
+  }
+}
+
 /* Header */
 .header {
   position: sticky;
@@ -249,7 +255,7 @@ body {
 
 .salon-home__brand-title {
   margin: 0;
-  max-width: min(95%, 32rem);
+  max-width: min(28vw, 20rem);
   width: 100%;
   line-height: 0;
 }
@@ -283,6 +289,12 @@ body {
   text-transform: uppercase;
   color: var(--color-text-muted);
   opacity: 0.75;
+}
+
+@media (min-width: 42rem) {
+  .salon-home__hero-tagline--location {
+    margin-top: 0.15rem;
+  }
 }
 
 .salon-home__hero-tagline--location + .salon-home__hero-tagline {
@@ -632,9 +644,16 @@ body {
   padding-top: clamp(2.25rem, 6.5vw, 3.75rem);
 }
 
+@media (min-width: 42rem) {
+  .main--article-with-brand {
+    padding-top: clamp(0.75rem, 2vw, 1.25rem);
+  }
+}
+
 .salon-home__hero--article {
   text-align: center;
   margin-bottom: 1.75rem;
+  padding-top: 0.35rem;
 }
 
 .page-article {
