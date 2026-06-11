@@ -82,7 +82,7 @@ export default function Home() {
       </div>
 
       <div className="salon-home__gallery-section">
-        <h2 className="salon-home__section-title reveal">O salonie</h2>
+        <h2 className="salon-home__section-title reveal">Miejsce</h2>
         <p className="salon-home__parking-info reveal">Dostępne bezpłatne miejsca parkingowe wzdłuż ogrodzenia.</p>
         <div className="salon-home__gallery reveal reveal--delay-1">
           <figure className="salon-home__gallery-item">
