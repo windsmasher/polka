@@ -25,8 +25,8 @@ export default function Home() {
     <section className="salon-home" aria-label="Strona główna">
       <div className="salon-home__hero">
         <BrandLockup titleAs="h1" srText="Salon Polka – Fryzjer Gliwice | Fryzjerstwo Trychologiczne" />
-        <p className="salon-home__hero-tagline">
-          Salon Polka – Fryzjer Gliwice
+        <p className="salon-home__hero-tagline salon-home__hero-tagline--location">
+          Salon Polka · Gliwice
         </p>
         <p className="salon-home__hero-tagline">
           Fryzjerstwo Trychologiczne
@@ -136,6 +136,7 @@ export default function Home() {
             />
           </figure>
         </div>
+        <p className="salon-home__gallery-hint" aria-hidden="true">przesuwaj →</p>
       </div>
     </section>
   )
