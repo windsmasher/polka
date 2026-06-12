@@ -1,26 +1,6 @@
-'use client'
-
-import { useEffect } from 'react'
 import BrandLockup from '@/components/BrandLockup'
 
 export default function Home() {
-  useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>('.reveal')
-    if (!els.length) return
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal--visible')
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.12 }
-    )
-    els.forEach(el => observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
   return (
     <section className="salon-home" aria-label="Strona główna">
       <div className="salon-home__hero">
@@ -39,6 +19,21 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Umów wizytę
+          </a>
+        </div>
+        <div className="salon-home__hero-details" aria-label="Najważniejsze informacje">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Salon%20Polka%20Daszy%C5%84skiego%20226B%20Gliwice"
+            className="salon-home__hero-detail"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Daszyńskiego 226B
+          </a>
+          <span className="salon-home__hero-detail">Bezpłatny parking</span>
+          <span className="salon-home__hero-detail">20+ lat doświadczenia</span>
+          <a href="tel:+48575509531" className="salon-home__hero-detail">
+            575 509 531
           </a>
         </div>
       </div>

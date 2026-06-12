@@ -58,7 +58,7 @@ body {
 .main--home {
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: clamp(2rem, 5vw, 3rem);
+  padding-top: clamp(1.25rem, 3vw, 2rem);
   padding-bottom: 3rem;
 }
 
@@ -84,10 +84,23 @@ body {
   -webkit-backdrop-filter: blur(14px);
 }
 
+@media (max-width: 34rem) {
+  .header {
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
 .header__right {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+}
+
+@media (max-width: 34rem) {
+  .header__right {
+    gap: 0.65rem;
+  }
 }
 
 .header__nav-list {
@@ -188,6 +201,12 @@ body {
   transition: color 0.2s ease;
 }
 
+@media (max-width: 34rem) {
+  .header__logo {
+    font-size: clamp(1.55rem, 9vw, 2rem);
+  }
+}
+
 @media (hover: hover) {
   .header__logo:hover {
     color: var(--color-accent);
@@ -196,8 +215,8 @@ body {
 
 /* Animations */
 @keyframes logoReveal {
-  from { opacity: 0; transform: scale(0.93); filter: blur(8px); }
-  to   { opacity: 1; transform: scale(1);    filter: blur(0); }
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 @keyframes heroSlideUp {
@@ -206,9 +225,9 @@ body {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
 .reveal--visible {
@@ -241,7 +260,7 @@ body {
 
 .salon-home__hero {
   text-align: center;
-  margin-bottom: clamp(2rem, 5vw, 3rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
   padding-top: 0.35rem;
 }
 
@@ -250,19 +269,19 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  animation: logoReveal 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation: logoReveal 0.65s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
 .salon-home__brand-title {
   margin: 0;
-  max-width: min(28vw, 20rem);
+  max-width: min(21vw, 16rem);
   width: 100%;
   line-height: 0;
 }
 
 @media (max-width: 42rem) {
   .salon-home__brand-title {
-    max-width: min(70%, 20rem);
+    max-width: min(62%, 15rem);
   }
 }
 
@@ -274,7 +293,7 @@ body {
   line-height: 1.45;
   color: var(--color-text);
   max-width: 28rem;
-  margin: clamp(1rem, 3vw, 1.5rem) auto 0;
+  margin: clamp(0.85rem, 2.4vw, 1.2rem) auto 0;
   padding: 0 0.5rem;
   letter-spacing: 0.01em;
   opacity: 0.92;
@@ -303,8 +322,8 @@ body {
 }
 
 .salon-home__hero-actions {
-  margin-top: clamp(1.5rem, 4vw, 2rem);
-  animation: heroSlideUp 0.7s ease 0.7s both;
+  margin-top: clamp(1rem, 2.5vw, 1.35rem);
+  animation: heroSlideUp 0.55s ease 0.35s both;
 }
 
 .salon-home__hero-cta {
@@ -321,6 +340,53 @@ body {
   border-radius: 2px;
   text-decoration: none;
   transition: background 0.2s ease;
+}
+
+.salon-home__hero-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 0.75rem;
+  max-width: 42rem;
+  margin: clamp(0.85rem, 2vw, 1.1rem) auto 0;
+  color: var(--color-text-muted);
+  font-size: clamp(0.8125rem, 2vw, 0.9375rem);
+  line-height: 1.4;
+  animation: heroSlideUp 0.55s ease 0.45s both;
+}
+
+.salon-home__hero-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.salon-home__hero-detail::before {
+  content: '';
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: var(--color-accent-light);
+  opacity: 0.9;
+}
+
+@media (hover: hover) {
+  a.salon-home__hero-detail:hover {
+    color: var(--color-accent);
+  }
+}
+
+@media (max-width: 28rem) {
+  .salon-home__hero-details {
+    gap: 0.45rem 0.65rem;
+  }
+
+  .salon-home__hero-detail {
+    white-space: normal;
+  }
 }
 
 @media (hover: hover) {
@@ -369,7 +435,7 @@ body {
   align-items: start;
   width: 100%;
   border-top: 1px solid rgba(139, 115, 85, 0.18);
-  padding-top: clamp(2rem, 5vw, 3rem);
+  padding-top: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 @media (max-width: 42rem) {
