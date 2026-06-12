@@ -26,7 +26,7 @@ const businessJsonLd = {
     name: 'Gliwice',
   },
   sameAs: [
-    'https://www.instagram.com/justyna_paczka',
+    'https://www.instagram.com/salonpolka.gliwice/',
     'https://www.facebook.com/profile.php?id=100057305956163',
     'https://booksy.com/pl-pl/dl/show-business/298223',
   ],

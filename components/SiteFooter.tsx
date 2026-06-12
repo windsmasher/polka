@@ -18,7 +18,7 @@ export default function SiteFooter() {
         </div>
         <div className="site-footer__socials" aria-label="Social media">
           <a
-            href="https://www.instagram.com/justyna_paczka"
+            href="https://www.instagram.com/salonpolka.gliwice/"
             className="site-footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
